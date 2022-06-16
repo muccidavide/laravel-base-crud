@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Model:Comic
+    -id
+    -description
+    -thumb
+    -price
+    -series
+    -sale_date
+    -type
+
+*/
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/comics', 'ComicController@index')->name('comics.index');
+Route::get('/comics/{comic}', 'ComicController@show')->name('comics.show');
