@@ -21,13 +21,13 @@
             
             <tr>
                 <td scope="row">{{$comic->id}}</td>
-                <td><img src="{{$comic->thumb}}" alt=""></td>
+                <td><img width="50" class="img-fluid" src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->title}}</td>
                 <td>{{$comic->description}}</td>
                 <td>{{$comic->series}}</td>
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
-                ù<td>{{$comic->price}}</td>
+                <td>{{$comic->price}}</td>
                 <td>View  Edit  Delete</td>
             </tr>
             @empty
