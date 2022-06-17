@@ -9,7 +9,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $comics = Comic::limit(3)->get();
-        return view('welcome', compact('comics'));
+        
+        return view('welcome');
     }
 }
